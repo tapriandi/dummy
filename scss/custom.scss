@@ -72,10 +72,10 @@ h3 {
   font-size: 60px;
 }
 h4 {
-  color: $w;
+  color: $gd;
   padding: 5px 0;
   font-size: 30px;
-  line-height: 1.4;
+  text-transform: capitalize;
 }
 h5 {
   font-size: 22px;
@@ -87,7 +87,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-p {
+p, pre {
   font-size: 16px;
   color: $gd;
   line-height: 1.5;
@@ -131,9 +131,25 @@ p {
   padding: 5px 40px;
   background-color: $gd;
   text-transform: capitalize;
+  justify-content: center;
+  border: 1px solid $tr; 
+  &.--gg {
+    border-color: $gd;
+    background-color: $w;
+    color: $gd;
+  }
   &.--o {
     background-color: $o;
   }
+  &.--oo {
+    background-color: $w;
+    color: $o;
+    border-color: $o;
+  }
+}
+.btn-gp {
+  display: flex;
+  justify-content: space-around;
 }
 
 

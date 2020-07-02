@@ -6,7 +6,7 @@ jq(window).ready(function() {
     speed: 100,
     autoplay: true
   });
-  jq(".m_gallery_slick").slick({
+  jq(".m_submis_slick").slick({
     dots: false,
     arrows: false,
     speed: 100,

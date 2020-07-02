@@ -65,7 +65,7 @@
       }
     }
   }
-  .gallery {
+  .submis {
     position: relative;
     padding: 100px 0;
     & > p {
@@ -115,7 +115,23 @@
   }
 }
 .m_title_gp {
-  padding: 10px 0;
+  position: relative;
+  padding: 30px 0;
+  height: 240px;
+  z-index: 2;
+  overflow: hidden;
+  .bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    img {
+      width: 130%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
   .wrap {
     text-align: center;
     h1, h2 {
@@ -193,4 +209,51 @@
 .card_story {
   position: relative;
   overflow: hidden;
+  padding: 20px;
+  .wrap {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    padding: 60px 0;
+    background: url('../images/paper/paper-green.png');
+    background-size: cover;
+    p {
+      padding: 0 10%;
+    }
+    .foto-gp {
+      position: relative;
+      width: 70%;
+      height: 360px;
+      margin:0 0 20px 8%;
+      .myfoto {
+        @include wh (100%, 100%);
+        object-fit: cover;
+        object-position: center;
+      }
+      .tape {
+        position: absolute;
+        width: 50%;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        &:nth-child(2) {
+          top: 85%;
+          transform: translateX(40%);
+        }
+      }
+    }
+    .btn_play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30%;
+      transform: translate(-50%, -50%);
+      img {
+        width: 100%;
+      }
+    }
+  }
+  h5 {
+    padding: 30px 0;
+  }
 }

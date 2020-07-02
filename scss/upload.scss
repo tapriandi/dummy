@@ -1,0 +1,112 @@
+@import './reset.scss';
+
+.m_upload {
+  background-color: $yl;
+  .act, .prep, .stemp, .evid {
+    padding: 30px 20px;
+    h4 {
+      text-align: center;
+      padding: 30px 0;
+      text-shadow: $fb;
+    }
+    & > p {
+      padding: 10px;
+    }
+    .note {
+      p {
+        text-align: center;
+        color: $o;
+        font-style: oblique;
+        font-family: $fl;
+      }
+    }
+    .btn-gp a {
+      width: 160px;
+      margin: 30px 0;
+    }
+    .policy {
+      position: relative;
+      padding: 50px 30px;
+      margin: 20px 0 80px 0;
+      background: url(../images/paper/paper-green.png) center no-repeat;
+      background-size: cover;
+      .tape {
+        top: -30px;
+        width: 40%;
+      }
+    }
+  }
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .on {
+      font-size: 24px;
+      font-family: $fh;
+    }
+  }
+}
+.m_input, .m_tarea {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  label {
+    color: $gd;
+    padding: 5px 0;
+  }
+  input, textarea {
+    width: 100%;
+    height: 46px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: $fm;
+    border: 1px solid transparent;
+    &:focus {
+      border: 1px solid $gd;
+    }
+  }
+  textarea {
+    height: 280px;
+    line-height: 1.6;
+  }
+}
+.uarea {
+  width: 80%;
+  height: 400px;
+  margin: 15px auto;
+  background-color: $w;
+  border: 2px dashed $gd;
+  input {
+    opacity: 0;
+    @include wh(100%, 100%);
+  }
+}
+.m_table {
+  margin: 10px 0;
+  p {
+    color: $gray-3;
+    &.-gd {
+      color: $gd;
+    }
+  }
+}
+.tape {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width:480px) {
+  .m_input, .m_tarea {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
