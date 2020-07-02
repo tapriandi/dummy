@@ -1,0 +1,48 @@
+
+$fl: 'Futura Lt BT';
+$fm: 'Futura Md BT';
+$fh: 'Futura Hv BT';
+$bi: 'Beyond Infinity - Demo';
+body {
+  font-family: $fm;
+}
+
+$yl: #F7F29F;
+// $yl: #ffff99;
+$bl: #acdaeb;
+// $bl: #99ccff;
+$gl: #99ff99;
+$gl-op: hsla(120, 100%, 80%, 0.96);
+$g: #81c94d;
+$gd: #339966;
+$o: #ff6633;
+
+$black: #000000;
+$black-op: hsla(0, 0%, 0%, 0.4);
+$black-op-2: hsla(0, 0%, 0%, 0.2);
+$w: white;
+$white-op: rgba(255, 255, 255, 0.85);
+$gray: #B4B4B4;
+$gray-2: #979797;
+$gray-3: #707070;
+$gray-bg: #F7F7F7;
+
+$fb: 2px  2px #fff,
+    -2px  2px #fff, 
+     2px -2px #fff, 
+    -2px -2px #fff;
+$sdw1: 0 6px 12px rgba(32, 29, 29, 0.2);
+$sdw2: 0 6px 14px rgba(31, 22, 70, 0.7);
+$jelly: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$jelly-2: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+
+/*
+  Natur-e microset custom mixin
+  -----------------------------
+*/
+
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}

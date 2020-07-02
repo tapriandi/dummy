@@ -1,0 +1,196 @@
+@import './reset.scss';
+
+.m_home {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  .content {
+    position: relative;
+    margin-top: 35px;
+    padding-top: 40px;
+    .tape {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      width: 30%;
+      transform: translateX(-50%);
+      img {
+        width: 100%;
+      }
+    }
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 80%;
+      z-index: -1;
+      transform: translateX(-50%);
+      img {
+        width: 100%;
+      }
+    }
+    .people {
+      width: 100%;
+      padding-top: 10px;
+      img {
+        display: inherit;
+        width: 90%;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .desc {
+      padding: 12% 16% 20% 16%;
+      background: url('../images/paper/paper-green.png') center no-repeat ;
+      background-size: cover;
+      p {
+        padding-bottom: 20px;
+        text-align: left;
+        &:nth-child(2) {
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+  .gift {
+    position: relative;
+    padding: 50px 0;
+    background-color: $yl;
+    &_card {
+      padding: 30px;
+      width: 100%;
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .gallery {
+    position: relative;
+    padding: 100px 0;
+    & > p {
+      padding: 30px 0;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .rule {
+    position: relative;
+    padding: 50px 0;
+    background-color: $bl;
+  }
+}
+
+.rip {
+  position: absolute;
+  width: 110%;
+  img {
+    width: 100%;
+  }
+  &.-top {
+    top: 0;
+    transform: translate(-5%, -50%);
+  }
+  &.-bot {
+    bottom: 0;
+    transform: translate(-5%, 50%);
+  }
+}
+.path_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.path_bot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.m_title_gp {
+  padding: 10px 0;
+  .wrap {
+    text-align: center;
+    h1, h2 {
+      padding: 0;
+      line-height: .9;
+    }
+    &:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 20px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.card_rule {
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+  .wrap {
+    position: relative;
+    @include wh(200px, 200px);
+    margin: auto;
+    img {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      &:nth-child(2) {
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        @include wh (50%, 50%);
+      }
+    }
+    .circle {
+      top: 0;
+      margin-left: auto;
+      @include wh(90%, 90%);
+      border-radius: 50%;
+      background-color: $yl;
+    }
+    .number {
+      position: absolute;
+      display: flex;
+      bottom: 10%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $gd;
+      @include wh(50px, 50px);
+      span {
+        color: $w;
+        font-size: 20px;
+      }
+    }
+  }
+  p {
+    width: 140px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+.card-home {
+  .box-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.card_story {
+  position: relative;
+  overflow: hidden;
+}
