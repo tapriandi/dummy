@@ -1,0 +1,59 @@
+@import './custom.scss';
+
+.m_gallery {
+  background-color: $bl;
+  padding-bottom: 60px;
+  .wrapper {
+    .gallery-gp {
+      text-align: center;
+      h5 {
+        padding: 60px 0 20px 0;
+        text-shadow: $fb;
+      }
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+          padding: 10px;
+          @include wh(50%, auto);
+          img {
+            margin-bottom: 5px;
+            @include wh(100%, 260px);
+            object-fit: cover;
+            object-position: center;
+          }
+          p {
+            color: $black;
+            &:nth-child(3) {
+              color: $gray-3;
+              font-size: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.m_input_2 {
+  position: relative;
+  input {
+    border: none;
+    width: 100%;
+    height: 34px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 16px;
+    border-bottom: 1px solid $gd;
+    background-color: $tr;
+  }
+  a {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.wrapper {
+  padding: 0 20px;
+}

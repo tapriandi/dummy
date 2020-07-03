@@ -2,7 +2,7 @@
 
 .m_upload {
   background-color: $yl;
-  .act, .prep, .stemp, .evid {
+  .act, .prep, .stemp, .evid, .thanks {
     padding: 30px 20px;
     h4 {
       text-align: center;
@@ -33,6 +33,18 @@
       .tape {
         top: -30px;
         width: 40%;
+      }
+    }
+  }
+  .thanks {
+    text-align: center;
+    padding: 50px 0;
+    .policy {
+      margin: 40px 20px;
+      padding-bottom: 80px;
+      p {
+        padding: 10px 0;
+        line-height: 1.8;
       }
     }
   }
