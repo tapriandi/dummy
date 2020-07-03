@@ -1,0 +1,23 @@
+@import './reset.scss';
+
+.m_winner {
+  background-color: $yl;
+  .main {
+    padding: 60px 20px;
+  }
+  .period {
+    padding: 60px 20px;
+    background-color: pink;
+    .m_title_gp {
+      .wrap h1, h2 {
+        width: 100%;
+      }
+    }
+    & > p {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+}
